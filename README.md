@@ -27,7 +27,7 @@ Drop-in Sleads CMS integration for Nuxt 4. Mirrors the Next.js `useSleadsCMS` AP
 
 3. **Environment**
 
-   Set the API key via env (no hardcoding):
+   Set the API key via env (BE AWARE! This key should never be used anywhere outside of the development environment):
 
    ```bash
    NUXT_PUBLIC_SLEADS_CMS_API_KEY=your-api-key
