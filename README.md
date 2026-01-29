@@ -66,7 +66,18 @@ Drop-in Sleads CMS integration for Nuxt 4. Mirrors the Next.js `useSleadsCMS` AP
 - **`useSleadsCMSLanguage()`**  
   Use when you only need language state (e.g. a language switcher). Must be used inside `SleadsCMSLanguageProvider`.
 
-Example:
+- **`LanguageSelector`**  
+  Drop-in language switcher component. Renders a dropdown with flag, display name, and code for each available language (from the CMS). Handles loading and empty states, click-outside to close, and dark mode. Must be used inside `SleadsCMSLanguageProvider`.
+
+  ```vue
+  <template>
+    <LanguageSelector />
+  </template>
+  ```
+
+  Use it in your header, layout, or anywhere under the provider. No props required.
+
+Example (manual select, if you prefer to build your own):
 
 ```vue
 <script setup lang="ts">
